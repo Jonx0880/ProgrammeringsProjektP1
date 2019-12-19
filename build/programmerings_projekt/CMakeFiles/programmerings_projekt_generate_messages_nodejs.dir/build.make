@@ -58,8 +58,9 @@ programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_nodej
 
 /home/ros/catkin_ws/devel/share/gennodejs/ros/programmerings_projekt/msg/Num.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
 /home/ros/catkin_ws/devel/share/gennodejs/ros/programmerings_projekt/msg/Num.js: /home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg
+/home/ros/catkin_ws/devel/share/gennodejs/ros/programmerings_projekt/msg/Num.js: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from programmerings_projekt/Num.msg"
-	cd /home/ros/catkin_ws/build/programmerings_projekt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg -Iprogrammerings_projekt:/home/ros/catkin_ws/src/programmerings_projekt/msg -p programmerings_projekt -o /home/ros/catkin_ws/devel/share/gennodejs/ros/programmerings_projekt/msg
+	cd /home/ros/catkin_ws/build/programmerings_projekt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg -Iprogrammerings_projekt:/home/ros/catkin_ws/src/programmerings_projekt/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p programmerings_projekt -o /home/ros/catkin_ws/devel/share/gennodejs/ros/programmerings_projekt/msg
 
 programmerings_projekt_generate_messages_nodejs: programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_nodejs
 programmerings_projekt_generate_messages_nodejs: /home/ros/catkin_ws/devel/share/gennodejs/ros/programmerings_projekt/msg/Num.js

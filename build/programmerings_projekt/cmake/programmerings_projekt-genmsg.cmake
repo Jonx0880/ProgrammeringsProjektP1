@@ -2,7 +2,7 @@
 
 message(STATUS "programmerings_projekt: 1 messages, 0 services")
 
-set(MSG_I_FLAGS "-Iprogrammerings_projekt:/home/ros/catkin_ws/src/programmerings_projekt/msg")
+set(MSG_I_FLAGS "-Iprogrammerings_projekt:/home/ros/catkin_ws/src/programmerings_projekt/msg;-Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -19,7 +19,7 @@ add_custom_target(programmerings_projekt_generate_messages ALL)
 
 get_filename_component(_filename "/home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg" NAME_WE)
 add_custom_target(_programmerings_projekt_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "programmerings_projekt" "/home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "programmerings_projekt" "/home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg" "geometry_msgs/Point"
 )
 
 #
@@ -31,7 +31,7 @@ add_custom_target(_programmerings_projekt_generate_messages_check_deps_${_filena
 _generate_msg_cpp(programmerings_projekt
   "/home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/programmerings_projekt
 )
 
@@ -64,7 +64,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS programmerings_projekt_generate_mes
 _generate_msg_eus(programmerings_projekt
   "/home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/programmerings_projekt
 )
 
@@ -97,7 +97,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS programmerings_projekt_generate_mes
 _generate_msg_lisp(programmerings_projekt
   "/home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/programmerings_projekt
 )
 
@@ -130,7 +130,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS programmerings_projekt_generate_mes
 _generate_msg_nodejs(programmerings_projekt
   "/home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/programmerings_projekt
 )
 
@@ -163,7 +163,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS programmerings_projekt_generate_mes
 _generate_msg_py(programmerings_projekt
   "/home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/programmerings_projekt
 )
 
@@ -200,6 +200,9 @@ if(gencpp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/pr
     DESTINATION ${gencpp_INSTALL_DIR}
   )
 endif()
+if(TARGET geometry_msgs_generate_messages_cpp)
+  add_dependencies(programmerings_projekt_generate_messages_cpp geometry_msgs_generate_messages_cpp)
+endif()
 
 if(geneus_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/programmerings_projekt)
   # install generated code
@@ -207,6 +210,9 @@ if(geneus_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/pr
     DIRECTORY ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/programmerings_projekt
     DESTINATION ${geneus_INSTALL_DIR}
   )
+endif()
+if(TARGET geometry_msgs_generate_messages_eus)
+  add_dependencies(programmerings_projekt_generate_messages_eus geometry_msgs_generate_messages_eus)
 endif()
 
 if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/programmerings_projekt)
@@ -216,6 +222,9 @@ if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/
     DESTINATION ${genlisp_INSTALL_DIR}
   )
 endif()
+if(TARGET geometry_msgs_generate_messages_lisp)
+  add_dependencies(programmerings_projekt_generate_messages_lisp geometry_msgs_generate_messages_lisp)
+endif()
 
 if(gennodejs_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/programmerings_projekt)
   # install generated code
@@ -223,6 +232,9 @@ if(gennodejs_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_D
     DIRECTORY ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/programmerings_projekt
     DESTINATION ${gennodejs_INSTALL_DIR}
   )
+endif()
+if(TARGET geometry_msgs_generate_messages_nodejs)
+  add_dependencies(programmerings_projekt_generate_messages_nodejs geometry_msgs_generate_messages_nodejs)
 endif()
 
 if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/programmerings_projekt)
@@ -232,4 +244,7 @@ if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/prog
     DIRECTORY ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/programmerings_projekt
     DESTINATION ${genpy_INSTALL_DIR}
   )
+endif()
+if(TARGET geometry_msgs_generate_messages_py)
+  add_dependencies(programmerings_projekt_generate_messages_py geometry_msgs_generate_messages_py)
 endif()

@@ -9,9 +9,9 @@
 
 using namespace std;
 
-struct Point{double x;
+struct VectorPoints{double x;
 double y;};
-vector<Point> pointarray;
+vector<VectorPoints> pointarray;
 
 //To load map - rosrun map_server map_server editedmap.yaml
 
@@ -19,7 +19,7 @@ void PointStampedCallback(const geometry_msgs::PointStamped::ConstPtr& msg){
   double x = msg->point.x;
   double y = msg->point.y;
   ROS_INFO("x: %f,y: %f", x, y);
-  Point currentPoint;
+  VectorPoints currentPoint;
   currentPoint.x = x;
   currentPoint.y = y;
   pointarray.push_back(currentPoint);
@@ -48,7 +48,9 @@ int main(int argc, char **argv)
       cout << "y: " << pointarray[i].y << " ";
       cout << "\n";
   }
-
+  
+  //ros::Publisher pub = nh.advertise<programmerings_projekt::Num>("coordinate_list", 100);
+   
   ros::spin();
 
   return 0;

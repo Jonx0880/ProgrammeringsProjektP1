@@ -15,6 +15,7 @@
 #include <ros/builtin_message_traits.h>
 #include <ros/message_operations.h>
 
+#include <geometry_msgs/Point.h>
 
 namespace programmerings_projekt
 {
@@ -24,17 +25,17 @@ struct Num_
   typedef Num_<ContainerAllocator> Type;
 
   Num_()
-    : num(0)  {
+    : pointarray()  {
     }
   Num_(const ContainerAllocator& _alloc)
-    : num(0)  {
+    : pointarray(_alloc)  {
   (void)_alloc;
     }
 
 
 
-   typedef int64_t _num_type;
-  _num_type num;
+   typedef std::vector< ::geometry_msgs::Point_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::geometry_msgs::Point_<ContainerAllocator> >::other >  _pointarray_type;
+  _pointarray_type pointarray;
 
 
 
@@ -70,8 +71,8 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'programmerings_projekt': ['/home/ros/catkin_ws/src/programmerings_projekt/msg']}
+// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
+// {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg'], 'programmerings_projekt': ['/home/ros/catkin_ws/src/programmerings_projekt/msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 
@@ -80,12 +81,12 @@ namespace message_traits
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::programmerings_projekt::Num_<ContainerAllocator> >
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::programmerings_projekt::Num_<ContainerAllocator> const>
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -114,12 +115,12 @@ struct MD5Sum< ::programmerings_projekt::Num_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "57d3c40ec3ac3754af76a83e6e73127a";
+    return "9bba95aca27ea6460037613bb86c57c0";
   }
 
   static const char* value(const ::programmerings_projekt::Num_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x57d3c40ec3ac3754ULL;
-  static const uint64_t static_value2 = 0xaf76a83e6e73127aULL;
+  static const uint64_t static_value1 = 0x9bba95aca27ea646ULL;
+  static const uint64_t static_value2 = 0x0037613bb86c57c0ULL;
 };
 
 template<class ContainerAllocator>
@@ -138,7 +139,14 @@ struct Definition< ::programmerings_projekt::Num_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "int64 num\n\
+    return "geometry_msgs/Point[] pointarray\n\
+\n\
+================================================================================\n\
+MSG: geometry_msgs/Point\n\
+# This contains the position of a point in free space\n\
+float64 x\n\
+float64 y\n\
+float64 z\n\
 ";
   }
 
@@ -157,7 +165,7 @@ namespace serialization
   {
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
-      stream.next(m.num);
+      stream.next(m.pointarray);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -176,8 +184,14 @@ struct Printer< ::programmerings_projekt::Num_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::programmerings_projekt::Num_<ContainerAllocator>& v)
   {
-    s << indent << "num: ";
-    Printer<int64_t>::stream(s, indent + "  ", v.num);
+    s << indent << "pointarray[]" << std::endl;
+    for (size_t i = 0; i < v.pointarray.size(); ++i)
+    {
+      s << indent << "  pointarray[" << i << "]: ";
+      s << std::endl;
+      s << indent;
+      Printer< ::geometry_msgs::Point_<ContainerAllocator> >::stream(s, indent + "    ", v.pointarray[i]);
+    }
   }
 };
 

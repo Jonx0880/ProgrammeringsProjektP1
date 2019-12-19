@@ -67,7 +67,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate added messages and services with any dependencies listed here
  generate_messages(
    DEPENDENCIES
-   #std_msgs
+   geometry_msgs
  )
 
 ################################################
@@ -211,4 +211,8 @@ include_directories(
 add_executable(Talker_node src/Talker.cpp)
 target_link_libraries(Talker_node ${catkin_LIBRARIES})
 add_dependencies(Talker_node programmerings_projekt_generate_messages_cpp)
+
+add_executable(Listener_node src/Listener.cpp)
+target_link_libraries(Listener_node ${catkin_LIBRARIES})
+add_dependencies(Listener_node programmerings_projekt_generate_messages_cpp)
 

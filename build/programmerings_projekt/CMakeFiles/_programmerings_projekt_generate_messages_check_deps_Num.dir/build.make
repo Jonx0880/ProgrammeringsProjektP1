@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ros/catkin_ws/build
 include programmerings_projekt/CMakeFiles/_programmerings_projekt_generate_messages_check_deps_Num.dir/progress.make
 
 programmerings_projekt/CMakeFiles/_programmerings_projekt_generate_messages_check_deps_Num:
-	cd /home/ros/catkin_ws/build/programmerings_projekt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py programmerings_projekt /home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg 
+	cd /home/ros/catkin_ws/build/programmerings_projekt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py programmerings_projekt /home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg geometry_msgs/Point
 
 _programmerings_projekt_generate_messages_check_deps_Num: programmerings_projekt/CMakeFiles/_programmerings_projekt_generate_messages_check_deps_Num
 _programmerings_projekt_generate_messages_check_deps_Num: programmerings_projekt/CMakeFiles/_programmerings_projekt_generate_messages_check_deps_Num.dir/build.make

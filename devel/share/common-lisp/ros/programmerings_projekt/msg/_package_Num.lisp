@@ -1,4 +1,4 @@
 (cl:in-package programmerings_projekt-msg)
-(cl:export '(NUM-VAL
-          NUM
+(cl:export '(POINTARRAY-VAL
+          POINTARRAY
 ))

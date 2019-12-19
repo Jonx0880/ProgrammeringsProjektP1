@@ -3,9 +3,9 @@
 messages_str = "/home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg"
 services_str = ""
 pkg_name = "programmerings_projekt"
-dependencies_str = ""
+dependencies_str = "geometry_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"
-dep_include_paths_str = "programmerings_projekt;/home/ros/catkin_ws/src/programmerings_projekt/msg"
+dep_include_paths_str = "programmerings_projekt;/home/ros/catkin_ws/src/programmerings_projekt/msg;geometry_msgs;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg;std_msgs;/opt/ros/kinetic/share/std_msgs/cmake/../msg"
 PYTHON_EXECUTABLE = "/usr/bin/python"
 package_has_static_sources = '' == 'TRUE'
 genmsg_check_deps_script = "/opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py"

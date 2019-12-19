@@ -60,8 +60,9 @@ programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_py: /
 
 /home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/_Num.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/_Num.py: /home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg
+/home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/_Num.py: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG programmerings_projekt/Num"
-	cd /home/ros/catkin_ws/build/programmerings_projekt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg -Iprogrammerings_projekt:/home/ros/catkin_ws/src/programmerings_projekt/msg -p programmerings_projekt -o /home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg
+	cd /home/ros/catkin_ws/build/programmerings_projekt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg -Iprogrammerings_projekt:/home/ros/catkin_ws/src/programmerings_projekt/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p programmerings_projekt -o /home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg
 
 /home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/__init__.py: /home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/_Num.py

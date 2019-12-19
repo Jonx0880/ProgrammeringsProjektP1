@@ -1,1 +1,1 @@
-int64 num
+geometry_msgs/Point[] pointarray

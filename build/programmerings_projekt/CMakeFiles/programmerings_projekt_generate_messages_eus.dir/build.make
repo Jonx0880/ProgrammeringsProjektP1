@@ -59,12 +59,13 @@ programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_eus: 
 
 /home/ros/catkin_ws/devel/share/roseus/ros/programmerings_projekt/msg/Num.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 /home/ros/catkin_ws/devel/share/roseus/ros/programmerings_projekt/msg/Num.l: /home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg
+/home/ros/catkin_ws/devel/share/roseus/ros/programmerings_projekt/msg/Num.l: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from programmerings_projekt/Num.msg"
-	cd /home/ros/catkin_ws/build/programmerings_projekt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg -Iprogrammerings_projekt:/home/ros/catkin_ws/src/programmerings_projekt/msg -p programmerings_projekt -o /home/ros/catkin_ws/devel/share/roseus/ros/programmerings_projekt/msg
+	cd /home/ros/catkin_ws/build/programmerings_projekt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg -Iprogrammerings_projekt:/home/ros/catkin_ws/src/programmerings_projekt/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p programmerings_projekt -o /home/ros/catkin_ws/devel/share/roseus/ros/programmerings_projekt/msg
 
 /home/ros/catkin_ws/devel/share/roseus/ros/programmerings_projekt/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for programmerings_projekt"
-	cd /home/ros/catkin_ws/build/programmerings_projekt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/ros/catkin_ws/devel/share/roseus/ros/programmerings_projekt programmerings_projekt
+	cd /home/ros/catkin_ws/build/programmerings_projekt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/ros/catkin_ws/devel/share/roseus/ros/programmerings_projekt programmerings_projekt geometry_msgs
 
 programmerings_projekt_generate_messages_eus: programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_eus
 programmerings_projekt_generate_messages_eus: /home/ros/catkin_ws/devel/share/roseus/ros/programmerings_projekt/msg/Num.l

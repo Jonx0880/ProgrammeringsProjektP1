@@ -58,9 +58,10 @@ programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_cpp: 
 
 /home/ros/catkin_ws/devel/include/programmerings_projekt/Num.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/ros/catkin_ws/devel/include/programmerings_projekt/Num.h: /home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg
+/home/ros/catkin_ws/devel/include/programmerings_projekt/Num.h: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
 /home/ros/catkin_ws/devel/include/programmerings_projekt/Num.h: /opt/ros/kinetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from programmerings_projekt/Num.msg"
-	cd /home/ros/catkin_ws/src/programmerings_projekt && /home/ros/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg -Iprogrammerings_projekt:/home/ros/catkin_ws/src/programmerings_projekt/msg -p programmerings_projekt -o /home/ros/catkin_ws/devel/include/programmerings_projekt -e /opt/ros/kinetic/share/gencpp/cmake/..
+	cd /home/ros/catkin_ws/src/programmerings_projekt && /home/ros/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg -Iprogrammerings_projekt:/home/ros/catkin_ws/src/programmerings_projekt/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p programmerings_projekt -o /home/ros/catkin_ws/devel/include/programmerings_projekt -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 programmerings_projekt_generate_messages_cpp: programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_cpp
 programmerings_projekt_generate_messages_cpp: /home/ros/catkin_ws/devel/include/programmerings_projekt/Num.h

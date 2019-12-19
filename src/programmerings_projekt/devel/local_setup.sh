@@ -1,0 +1,1 @@
+/home/ros/catkin_ws/src/programmerings_projekt/devel/.private/catkin_tools_prebuild/local_setup.sh

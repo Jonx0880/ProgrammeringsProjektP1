@@ -17,7 +17,8 @@ using namespace std;
 
 struct VectorPoints{double x;
 double y;};
-vector<VectorPoints> mypoints;
+vector<VectorPoints> pointarray; //latest change
+vector<geometry_msgs::Point> mypoints; //latest change
 
 void getpoints(const programmerings_projekt::Num::ConstPtr& msg)
 {

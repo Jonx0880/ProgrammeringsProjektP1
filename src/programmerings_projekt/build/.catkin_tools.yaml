@@ -1,6 +1,0 @@
-devel_space: /home/ros/catkin_ws/src/programmerings_projekt/devel
-install: false
-install_space: /home/ros/catkin_ws/src/programmerings_projekt/install
-profile: default
-source_space: /home/ros/catkin_ws/src/programmerings_projekt/src
-workspace: /home/ros/catkin_ws/src/programmerings_projekt

@@ -4,21 +4,23 @@
 #include <iostream>
 #include <actionlib/client/simple_action_client.h>
 #include <move_base_msgs/MoveBaseAction.h>
+
 #include "programmerings_projekt/Num.h"
 #include <time.h>
-
+#include <cstdio>
 #include <cstdlib>
 #include <math.h>
 #include <actionlib/client/simple_action_client.h>
-#include <tf/transform_listener.h>
+
 
 
 using namespace std;
 
+
 struct VectorPoints{double x;
 double y;};
-vector<VectorPoints> pointarray; //latest change
-vector<geometry_msgs::Point> mypoints; //latest change
+//vector<VectorPoints> mypoints;
+vector<geometry_msgs::Point> mypoints;
 
 void getpoints(const programmerings_projekt::Num::ConstPtr& msg)
 {
@@ -77,6 +79,8 @@ bool moveToGoal(double xGoal, double yGoal)
 }
 
 
+
+
 int main(int argc, char **argv)
 {
   
@@ -110,3 +114,4 @@ int main(int argc, char **argv)
 
   return 0;	
 }
+

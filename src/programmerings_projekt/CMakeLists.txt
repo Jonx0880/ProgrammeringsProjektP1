@@ -68,8 +68,12 @@ find_package(catkin REQUIRED COMPONENTS
  generate_messages(
    DEPENDENCIES
    geometry_msgs
+   actionlib_msgs
+   std_msgs
+   nav_msgs
  )
-
+ 
+ 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
 ################################################
@@ -108,6 +112,7 @@ catkin_package(
   std_msgs 
   message_runtime 
   geometry_msgs
+  actionlib_msgs
   nav_msgs
 #  DEPENDS system_lib
 )

@@ -37,25 +37,40 @@ int main(int argc, char **argv)
   ros::init(argc, argv, "talker");
   ros::NodeHandle nh;
   ros::Subscriber sub = nh.subscribe("clicked_point", 10, PointStampedCallback);
-  
+  ros::Publisher pub = nh.advertise<programmerings_projekt::Num>("coordinate_list", 1000);
   ros::Duration(10).sleep();
+  
+  while (true)
+  {
+    /* code */
+  
+  
   ros::spinOnce();
   cout << "\nYour route consists of ";
   cout << pointarray.size();
   cout << " points \n";
- 
- 
- 
   for (int i = 0; i < pointarray.size(); i++) {
       cout << "x: " << pointarray[i].x << " ";
       cout << "y: " << pointarray[i].y << " ";
       cout << "\n";
+     
   }
+ 
   
-  ros::Publisher pub = nh.advertise<programmerings_projekt::Num>("coordinate_list", 1000);
-   
+ 
+  
+  
+  programmerings_projekt::Num msg;
+   for (int i = 0; i < pointarray.size(); i++) {
+     geometry_msgs::Point p;
+   p.x = pointarray[i].x;
+      p.y = pointarray[i].y;
+      msg.pointarray.push_back(p);
+   }
+  
+  pub.publish(msg);
   ros::spin();
-
+  }
   return 0;
 
 }

@@ -2,6 +2,9 @@
 #include "geometry_msgs/PointStamped.h"
 #include <iostream>
 #include <vector>
+#include <math.h>
+#include "programmerings_projekt/Num.h"
+
 //#include <cstddef>
 //#include <array>
 
@@ -49,12 +52,10 @@ int main(int argc, char **argv)
       cout << "\n";
   }
   
-  //ros::Publisher pub = nh.advertise<programmerings_projekt::Num>("coordinate_list", 100);
+  ros::Publisher pub = nh.advertise<programmerings_projekt::Num>("coordinate_list", 1000);
    
   ros::spin();
 
   return 0;
 
 }
-
-

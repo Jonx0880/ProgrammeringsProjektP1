@@ -44,6 +44,11 @@ int main(int argc, char **argv)
   {
     /* code */
   
+  while (pointarray.size()<= 5)
+  {
+    cout << "click more points" << endl;
+    ros::spinOnce();
+  }
   
   ros::spinOnce();
   cout << "\nYour route consists of ";

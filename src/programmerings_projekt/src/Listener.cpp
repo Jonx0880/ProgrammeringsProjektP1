@@ -24,7 +24,7 @@ vector<geometry_msgs::Point> mypoints;
 
 void getpoints(const programmerings_projekt::Num::ConstPtr& msg)
 {
-	if(mypoints.size()<= 1)
+	if(mypoints.size()<= 5)
 	{
 	   mypoints = msg->pointarray;
 	}
@@ -89,12 +89,12 @@ int main(int argc, char **argv)
  
   ros::Subscriber sub = nh.subscribe("coordinate_list", 10, getpoints);
   
-  while(mypoints.size() < 1)
+  while(mypoints.size() < 5)
   {
 
   cout << "Waiting for subscriber:" << endl;   
   ros::spinOnce();
-
+  
   }
 
 

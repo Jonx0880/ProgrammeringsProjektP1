@@ -6,15 +6,37 @@
 
 #IncludeRegexTransform: 
 
-/home/ros/catkin_ws/src/programmerings_projekt/src/Talker.cpp
+/home/ros/Programmering/devel/include/programmerings_projekt/Num.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+geometry_msgs/Point.h
+-
+
+/home/ros/Programmering/src/programmerings_projekt/src/Talker.cpp
 ros/ros.h
-/home/ros/catkin_ws/src/programmerings_projekt/src/ros/ros.h
+/home/ros/Programmering/src/programmerings_projekt/src/ros/ros.h
 geometry_msgs/PointStamped.h
-/home/ros/catkin_ws/src/programmerings_projekt/src/geometry_msgs/PointStamped.h
+/home/ros/Programmering/src/programmerings_projekt/src/geometry_msgs/PointStamped.h
 iostream
 -
 vector
 -
+math.h
+-
+programmerings_projekt/Num.h
+/home/ros/Programmering/src/programmerings_projekt/src/programmerings_projekt/Num.h
 
 /opt/ros/kinetic/include/geometry_msgs/Point.h
 string

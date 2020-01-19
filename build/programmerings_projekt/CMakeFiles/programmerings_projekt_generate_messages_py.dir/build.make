@@ -43,41 +43,34 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ros/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ros/Programmering/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ros/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ros/Programmering/build
 
 # Utility rule file for programmerings_projekt_generate_messages_py.
 
 # Include the progress variables for this target.
 include programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_py.dir/progress.make
 
-programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_py: /home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/_Num.py
-programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_py: /home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/__init__.py
-programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_py: /home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/srv/__init__.py
+programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_py: /home/ros/Programmering/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/_Num.py
+programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_py: /home/ros/Programmering/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/__init__.py
 
 
-/home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/_Num.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/_Num.py: /home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg
-/home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/_Num.py: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG programmerings_projekt/Num"
-	cd /home/ros/catkin_ws/build/programmerings_projekt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg -Iprogrammerings_projekt:/home/ros/catkin_ws/src/programmerings_projekt/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p programmerings_projekt -o /home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg
+/home/ros/Programmering/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/_Num.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/ros/Programmering/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/_Num.py: /home/ros/Programmering/src/programmerings_projekt/msg/Num.msg
+/home/ros/Programmering/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/_Num.py: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/Programmering/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG programmerings_projekt/Num"
+	cd /home/ros/Programmering/build/programmerings_projekt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ros/Programmering/src/programmerings_projekt/msg/Num.msg -Iprogrammerings_projekt:/home/ros/Programmering/src/programmerings_projekt/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Inav_msgs:/opt/ros/kinetic/share/nav_msgs/cmake/../msg -p programmerings_projekt -o /home/ros/Programmering/devel/lib/python2.7/dist-packages/programmerings_projekt/msg
 
-/home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/__init__.py: /home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/_Num.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for programmerings_projekt"
-	cd /home/ros/catkin_ws/build/programmerings_projekt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg --initpy
-
-/home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/srv/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/srv/__init__.py: /home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/_Num.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python srv __init__.py for programmerings_projekt"
-	cd /home/ros/catkin_ws/build/programmerings_projekt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/srv --initpy
+/home/ros/Programmering/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/ros/Programmering/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/__init__.py: /home/ros/Programmering/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/_Num.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/Programmering/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for programmerings_projekt"
+	cd /home/ros/Programmering/build/programmerings_projekt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/ros/Programmering/devel/lib/python2.7/dist-packages/programmerings_projekt/msg --initpy
 
 programmerings_projekt_generate_messages_py: programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_py
-programmerings_projekt_generate_messages_py: /home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/_Num.py
-programmerings_projekt_generate_messages_py: /home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/__init__.py
-programmerings_projekt_generate_messages_py: /home/ros/catkin_ws/devel/lib/python2.7/dist-packages/programmerings_projekt/srv/__init__.py
+programmerings_projekt_generate_messages_py: /home/ros/Programmering/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/_Num.py
+programmerings_projekt_generate_messages_py: /home/ros/Programmering/devel/lib/python2.7/dist-packages/programmerings_projekt/msg/__init__.py
 programmerings_projekt_generate_messages_py: programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_py.dir/build.make
 
 .PHONY : programmerings_projekt_generate_messages_py
@@ -88,10 +81,10 @@ programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_py.di
 .PHONY : programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_py.dir/build
 
 programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_py.dir/clean:
-	cd /home/ros/catkin_ws/build/programmerings_projekt && $(CMAKE_COMMAND) -P CMakeFiles/programmerings_projekt_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/ros/Programmering/build/programmerings_projekt && $(CMAKE_COMMAND) -P CMakeFiles/programmerings_projekt_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_py.dir/clean
 
 programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_py.dir/depend:
-	cd /home/ros/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/catkin_ws/src /home/ros/catkin_ws/src/programmerings_projekt /home/ros/catkin_ws/build /home/ros/catkin_ws/build/programmerings_projekt /home/ros/catkin_ws/build/programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ros/Programmering/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/Programmering/src /home/ros/Programmering/src/programmerings_projekt /home/ros/Programmering/build /home/ros/Programmering/build/programmerings_projekt /home/ros/Programmering/build/programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : programmerings_projekt/CMakeFiles/programmerings_projekt_generate_messages_py.dir/depend
 

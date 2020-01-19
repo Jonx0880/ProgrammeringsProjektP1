@@ -96,7 +96,7 @@ int main(int argc, char **argv)
  
   cout << "Waiting for subscriber:" << endl;   
   ros::spinOnce();
-
+  
   }
 
 

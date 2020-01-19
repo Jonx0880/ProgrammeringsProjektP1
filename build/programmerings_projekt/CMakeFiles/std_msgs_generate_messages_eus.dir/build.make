@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ros/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ros/Programmering/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ros/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ros/Programmering/build
 
 # Utility rule file for std_msgs_generate_messages_eus.
 
@@ -63,10 +63,10 @@ programmerings_projekt/CMakeFiles/std_msgs_generate_messages_eus.dir/build: std_
 .PHONY : programmerings_projekt/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 
 programmerings_projekt/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
-	cd /home/ros/catkin_ws/build/programmerings_projekt && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/ros/Programmering/build/programmerings_projekt && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : programmerings_projekt/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 
 programmerings_projekt/CMakeFiles/std_msgs_generate_messages_eus.dir/depend:
-	cd /home/ros/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/catkin_ws/src /home/ros/catkin_ws/src/programmerings_projekt /home/ros/catkin_ws/build /home/ros/catkin_ws/build/programmerings_projekt /home/ros/catkin_ws/build/programmerings_projekt/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ros/Programmering/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/Programmering/src /home/ros/Programmering/src/programmerings_projekt /home/ros/Programmering/build /home/ros/Programmering/build/programmerings_projekt /home/ros/Programmering/build/programmerings_projekt/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : programmerings_projekt/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
 

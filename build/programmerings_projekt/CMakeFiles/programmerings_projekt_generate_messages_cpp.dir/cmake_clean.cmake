@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/programmerings_projekt_generate_messages_cpp"
-  "/home/ros/catkin_ws/devel/include/programmerings_projekt/Num.h"
+  "/home/ros/Programmering/devel/include/programmerings_projekt/Num.h"
 )
 
 # Per-language clean rules from dependency scanning.

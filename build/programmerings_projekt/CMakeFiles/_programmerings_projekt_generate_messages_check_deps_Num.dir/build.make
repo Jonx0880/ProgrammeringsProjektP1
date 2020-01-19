@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ros/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ros/Programmering/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ros/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ros/Programmering/build
 
 # Utility rule file for _programmerings_projekt_generate_messages_check_deps_Num.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ros/catkin_ws/build
 include programmerings_projekt/CMakeFiles/_programmerings_projekt_generate_messages_check_deps_Num.dir/progress.make
 
 programmerings_projekt/CMakeFiles/_programmerings_projekt_generate_messages_check_deps_Num:
-	cd /home/ros/catkin_ws/build/programmerings_projekt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py programmerings_projekt /home/ros/catkin_ws/src/programmerings_projekt/msg/Num.msg geometry_msgs/Point
+	cd /home/ros/Programmering/build/programmerings_projekt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py programmerings_projekt /home/ros/Programmering/src/programmerings_projekt/msg/Num.msg geometry_msgs/Point
 
 _programmerings_projekt_generate_messages_check_deps_Num: programmerings_projekt/CMakeFiles/_programmerings_projekt_generate_messages_check_deps_Num
 _programmerings_projekt_generate_messages_check_deps_Num: programmerings_projekt/CMakeFiles/_programmerings_projekt_generate_messages_check_deps_Num.dir/build.make
@@ -67,10 +67,10 @@ programmerings_projekt/CMakeFiles/_programmerings_projekt_generate_messages_chec
 .PHONY : programmerings_projekt/CMakeFiles/_programmerings_projekt_generate_messages_check_deps_Num.dir/build
 
 programmerings_projekt/CMakeFiles/_programmerings_projekt_generate_messages_check_deps_Num.dir/clean:
-	cd /home/ros/catkin_ws/build/programmerings_projekt && $(CMAKE_COMMAND) -P CMakeFiles/_programmerings_projekt_generate_messages_check_deps_Num.dir/cmake_clean.cmake
+	cd /home/ros/Programmering/build/programmerings_projekt && $(CMAKE_COMMAND) -P CMakeFiles/_programmerings_projekt_generate_messages_check_deps_Num.dir/cmake_clean.cmake
 .PHONY : programmerings_projekt/CMakeFiles/_programmerings_projekt_generate_messages_check_deps_Num.dir/clean
 
 programmerings_projekt/CMakeFiles/_programmerings_projekt_generate_messages_check_deps_Num.dir/depend:
-	cd /home/ros/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/catkin_ws/src /home/ros/catkin_ws/src/programmerings_projekt /home/ros/catkin_ws/build /home/ros/catkin_ws/build/programmerings_projekt /home/ros/catkin_ws/build/programmerings_projekt/CMakeFiles/_programmerings_projekt_generate_messages_check_deps_Num.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ros/Programmering/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/Programmering/src /home/ros/Programmering/src/programmerings_projekt /home/ros/Programmering/build /home/ros/Programmering/build/programmerings_projekt /home/ros/Programmering/build/programmerings_projekt/CMakeFiles/_programmerings_projekt_generate_messages_check_deps_Num.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : programmerings_projekt/CMakeFiles/_programmerings_projekt_generate_messages_check_deps_Num.dir/depend
 

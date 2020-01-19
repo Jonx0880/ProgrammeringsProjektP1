@@ -1,8 +1,8 @@
-prefix=/home/ros/catkin_ws/install
+prefix=/home/ros/Programmering/install
 
 Name: programmerings_projekt
 Description: Description of programmerings_projekt
 Version: 0.0.0
-Cflags: -I/home/ros/catkin_ws/install/include
-Libs: -L/home/ros/catkin_ws/install/lib 
-Requires: roscpp rospy std_msgs message_runtime geometry_msgs nav_msgs
+Cflags: -I/home/ros/Programmering/install/include
+Libs: -L/home/ros/Programmering/install/lib 
+Requires: roscpp rospy std_msgs message_runtime geometry_msgs actionlib_msgs nav_msgs

@@ -4,8 +4,8 @@
 #include <iostream>
 #include <actionlib/client/simple_action_client.h>
 #include <move_base_msgs/MoveBaseAction.h>
+#include "programmerings_projekt/Num.h" // message
 
-#include "programmerings_projekt/Num.h"
 #include <time.h>
 #include <cstdio>
 #include <cstdlib>
@@ -17,14 +17,14 @@
 using namespace std;
 
 
-struct VectorPoints{double x;
-double y;};
+
+
 //vector<VectorPoints> mypoints;
 vector<geometry_msgs::Point> mypoints;
 
 void getpoints(const programmerings_projekt::Num::ConstPtr& msg)
 {
-	if(mypoints.size()<= 1)
+	if(mypoints.size()<= 5)
 	{
 	   mypoints = msg->pointarray;
 	}
@@ -55,12 +55,14 @@ bool moveToGoal(double xGoal, double yGoal)
 	goal.target_pose.pose.position.x =  xGoal;
 	goal.target_pose.pose.position.y =  yGoal;
 	goal.target_pose.pose.position.z =  0.0;
+
 	goal.target_pose.pose.orientation.x = 0.0;
 	goal.target_pose.pose.orientation.y = 0.0;
 	goal.target_pose.pose.orientation.z = 0.0;
 	goal.target_pose.pose.orientation.w = 1.0;
 
 	ROS_INFO("Sending goal location ...");
+
 	ac.sendGoal(goal);
 	
 	ac.waitForResult();
@@ -89,9 +91,9 @@ int main(int argc, char **argv)
  
   ros::Subscriber sub = nh.subscribe("coordinate_list", 10, getpoints);
   
-  while(mypoints.size() < 1)
+  while(mypoints.size() <= 5)
   {
-
+ 
   cout << "Waiting for subscriber:" << endl;   
   ros::spinOnce();
 
@@ -102,11 +104,11 @@ int main(int argc, char **argv)
     {	
 		if(moveToGoal(mypoints[i].x, mypoints[i].y))
 		{
-			std::cout << "reached location:" << std::endl;
+			cout << "reached location:" << endl;
 		}
 		else
 		{
-			std::cout << "location: not reached going to next goal" << std::endl;
+			cout << "location: not reached going to next goal" << endl;
 		}
     }
 
